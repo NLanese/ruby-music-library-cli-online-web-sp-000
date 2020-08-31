@@ -104,7 +104,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     ui3 = gets.strip
     ui3 = ui3.to_i
-    if (ui3 > self.list_songs.length || ui3 < 1)
+    if (ui3 > Song.all.length || ui3 < 1)
       return nil
     else
       returnArray = []
