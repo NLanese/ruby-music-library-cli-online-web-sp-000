@@ -116,6 +116,7 @@ class MusicLibraryController
       alphabetizedArray.each do | selectedSongName |
         returnArray << Song.find_by_name(selectedSongName)
       end
+      binding.pry
       puts "Playing #{returnArray[ui3 + 1].name} by #{returnArray[ui3 + 1].artist.name}"
     end
   end
